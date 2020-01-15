@@ -95,8 +95,10 @@ public class FindUserActivity extends AppCompatActivity {
             phone = phone.replace("(", "");
             phone = phone.replace(")", "");
 
-            if(!String.valueOf(phone.charAt(0)).equals("+"))
+            if(!String.valueOf(phone.charAt(0)).equals("+")) {
                 phone = ISOPrefix + phone;
+                phone = phone.substring(1);
+            }
 
             UserObject mContact = new UserObject("", name, phone);
             contactList.add(mContact);

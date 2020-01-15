@@ -6,30 +6,41 @@
     android:id="@+id/layout"
     android:padding="20sp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@drawable/contact_rectangle"
         android:layout_gravity="center">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:maxWidth="240dp"
+            android:padding="8dp"
             android:text="name"
             android:id="@+id/name"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:maxWidth="240dp"
+            android:padding="8dp"
+            android:layout_below="@+id/name"
             android:text="phone"
             android:id="@+id/phone"/>
-    </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/name"
+            android:layout_centerInParent="true"
+            android:id="@+id/add"/>
+    </RelativeLayout>
+
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/add"/>
+
 </LinearLayout>
