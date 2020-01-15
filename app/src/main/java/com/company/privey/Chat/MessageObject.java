@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone.Chat;
+package com.company.privey.Chat;
 
 import java.util.ArrayList;
 

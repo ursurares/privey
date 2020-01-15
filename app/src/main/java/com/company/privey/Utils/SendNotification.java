@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone.Utils;
+package com.company.privey.Utils;
 
 import com.onesignal.OneSignal;
 

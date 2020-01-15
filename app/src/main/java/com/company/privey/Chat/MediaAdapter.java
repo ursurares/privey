@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone.Chat;
+package com.company.privey.Chat;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.simcoder.whatsappclone.R;
+import com.company.privey.R;
 
 import java.util.ArrayList;
 

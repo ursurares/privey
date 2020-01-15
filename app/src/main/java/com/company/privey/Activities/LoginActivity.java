@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone;
+package com.company.privey.Activities;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -22,8 +22,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.company.privey.R;
 
-import java.sql.Time;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;

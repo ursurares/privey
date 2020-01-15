@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone.User;
+package com.company.privey.User;
 
 import java.io.Serializable;
 

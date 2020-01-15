@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
     android:background="@color/grayBackground"
-    tools:context=".LoginActivity"
+    tools:context=".Activities.LoginActivity"
     android:orientation="vertical">
 
     <EditText

@@ -1,6 +1,6 @@
-package com.simcoder.whatsappclone.Chat;
+package com.company.privey.Chat;
 
-import com.simcoder.whatsappclone.User.UserObject;
+import com.company.privey.User.UserObject;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone;
+package com.company.privey.Activities;
 
 import android.database.Cursor;
 import android.provider.ContactsContract;
@@ -19,9 +19,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.simcoder.whatsappclone.User.UserListAdapter;
-import com.simcoder.whatsappclone.User.UserObject;
-import com.simcoder.whatsappclone.Utils.CountryToPhonePrefix;
+import com.company.privey.R;
+import com.company.privey.User.UserListAdapter;
+import com.company.privey.User.UserObject;
+import com.company.privey.Utils.CountryToPhonePrefix;
 
 import java.util.ArrayList;
 import java.util.HashMap;

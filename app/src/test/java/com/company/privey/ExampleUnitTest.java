@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone;
+package com.company.privey;
 
 import org.junit.Test;
 

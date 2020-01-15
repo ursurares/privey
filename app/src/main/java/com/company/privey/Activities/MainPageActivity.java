@@ -1,4 +1,4 @@
-package com.simcoder.whatsappclone;
+package com.company.privey.Activities;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,10 +20,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.onesignal.OneSignal;
-import com.simcoder.whatsappclone.Chat.ChatListAdapter;
-import com.simcoder.whatsappclone.Chat.ChatObject;
-import com.simcoder.whatsappclone.User.UserObject;
-import com.simcoder.whatsappclone.Utils.SendNotification;
+import com.company.privey.Chat.ChatListAdapter;
+import com.company.privey.Chat.ChatObject;
+import com.company.privey.R;
+import com.company.privey.User.UserObject;
 
 import java.util.ArrayList;
 
