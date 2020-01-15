@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="@color/grayBackground"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:digits="0123456789+"
+        android:hint="Enter Phone Number"
+        android:inputType="number|phone"
+        android:textColor="@color/colorAccentBland"
+        android:textColorHint="@color/colorAccentBland" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/phoneNumber"
+        android:digits="0123456789"
+        android:hint="Enter Code"
+        android:inputType="number"
+        android:textColor="@color/colorAccentBland"
+        android:textColorHint="@color/colorAccentBland" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/code"
+        android:text="Send Verification code" />
+
+</RelativeLayout>

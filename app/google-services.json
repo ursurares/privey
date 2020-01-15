@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "49868075212",
+    "firebase_url": "https://privey-d3df7.firebaseio.com",
+    "project_id": "privey-d3df7",
+    "storage_bucket": "privey-d3df7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49868075212:android:416d631261bb16037e5269",
+        "android_client_info": {
+          "package_name": "com.example.filip.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49868075212-avipi3j5j9657ao57s0rnka7m6vorprl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.filip.myapplication",
+            "certificate_hash": "995f266d6fe838eff7a94e8c9fb74c562313c790"
+          }
+        },
+        {
+          "client_id": "49868075212-bt4jd2blp79d6gu059cjieuifrqcq1pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3KFyiOROkSva1fwqb97UeT422GE5yhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49868075212-bt4jd2blp79d6gu059cjieuifrqcq1pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49868075212:android:809cdae66ba642697e5269",
+        "android_client_info": {
+          "package_name": "com.simcoder.whatsappclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49868075212-3o8lj9m20abq180t3m0und0i6j396rd5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simcoder.whatsappclone",
+            "certificate_hash": "995f266d6fe838eff7a94e8c9fb74c562313c790"
+          }
+        },
+        {
+          "client_id": "49868075212-fd6lbt06qs0ieg15hg7a41p2j4h4umd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simcoder.whatsappclone",
+            "certificate_hash": "b108392725e729e6f7e1a651c03c3c3fb7727ed8"
+          }
+        },
+        {
+          "client_id": "49868075212-bt4jd2blp79d6gu059cjieuifrqcq1pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3KFyiOROkSva1fwqb97UeT422GE5yhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49868075212-bt4jd2blp79d6gu059cjieuifrqcq1pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
