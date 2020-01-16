@@ -1,6 +1,9 @@
 package com.company.privey.Activities;
 
+import android.content.ContentResolver;
+import android.content.Context;
 import android.database.Cursor;
+import android.net.Uri;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -81,13 +84,32 @@ public class FindUserActivity extends AppCompatActivity {
 
     }
 
+    public String getContactName( String phoneNumber) {
+        ContentResolver cr = getContentResolver();
+        Uri uri = Uri.withAppendedPath(ContactsContract.PhoneLookup.CONTENT_FILTER_URI, Uri.encode(phoneNumber));
+        Cursor cursor = cr.query(uri, new String[]{ContactsContract.PhoneLookup.DISPLAY_NAME}, null, null, null);
+        if (cursor == null) {
+            return null;
+        }
+        String contactName = null;
+        if(cursor.moveToFirst()) {
+            contactName = cursor.getString(cursor.getColumnIndex(ContactsContract.PhoneLookup.DISPLAY_NAME));
+        }
+
+        if(cursor != null && !cursor.isClosed()) {
+            cursor.close();
+        }
+
+        return contactName;
+    }
+
     private void getContactList(){
 
         String ISOPrefix = getCountryISO();
 
         Cursor phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null, null, null);
         while(phones.moveToNext()){
-            String name = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+
             String phone = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
             phone = phone.replace(" ", "");
@@ -99,6 +121,8 @@ public class FindUserActivity extends AppCompatActivity {
                 phone = ISOPrefix + phone;
                 phone = phone.substring(1);
             }
+
+            String name = getContactName(phone);
 
             UserObject mContact = new UserObject("", name, phone);
             contactList.add(mContact);

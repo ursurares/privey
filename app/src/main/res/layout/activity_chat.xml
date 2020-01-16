@@ -33,6 +33,8 @@
             <EditText
                 android:layout_weight="0.7"
                 android:layout_width="0dp"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
                 android:layout_height="wrap_content"
                 android:id="@+id/messageInput"
                 android:hint="Type your message"/>
