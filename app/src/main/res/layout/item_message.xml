@@ -57,13 +57,17 @@ android:paddingTop="8dp">
     android:text="John Doe"
     android:textColor="@color/colorAccent"
     android:textSize="12sp"
-    app:layout_constraintEnd_toStartOf="@+id/message"
-    app:layout_constraintTop_toTopOf="parent" />
 
-<Button
+    app:layout_constraintTop_toBottomOf="@+id/message"
+    app:layout_constraintStart_toStartOf="@+id/message" />
+
+    <ImageButton
     android:id="@+id/viewMedia"
+    android:src="@drawable/dwn"
+    android:background="@null"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
     android:text="view Media"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
@@ -74,7 +78,7 @@ android:paddingTop="8dp">
     android:layout_height="1dp"
     app:layout_constraintBottom_toBottomOf="@+id/viewMedia"
     app:layout_constraintEnd_toStartOf="@+id/sender"
-    android:background="#000000"
+    android:background="@color/grayBackground"
     />
 
 

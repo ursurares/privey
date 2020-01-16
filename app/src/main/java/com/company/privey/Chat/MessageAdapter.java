@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -64,7 +65,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     class MessageViewHolder extends RecyclerView.ViewHolder{
         TextView    mMessage,
                     mSender;
-        Button mViewMedia;
+        ImageButton mViewMedia;
         ConstraintLayout mLayout;
         MessageViewHolder(View view){
             super(view);
