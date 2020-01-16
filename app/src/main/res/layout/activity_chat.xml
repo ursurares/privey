@@ -35,6 +35,7 @@
                 android:layout_width="0dp"
                 android:textColorHint="#ffffff"
                 android:backgroundTint="#ffffff"
+                android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:id="@+id/messageInput"
                 android:hint="Type your message"/>
@@ -42,14 +43,18 @@
             <ImageButton
                 android:id="@+id/addMedia"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/photo"
+                android:layout_weight="0.15"
                 android:text="add media" />
 
             <ImageButton
-                android:layout_weight="0.2"
+                android:layout_weight="0.15"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/send"
                 android:text="send"
                 android:id="@+id/send"/>
         </LinearLayout>
