@@ -30,7 +30,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText mPhoneNumber, mCode;
+    private EditText mPhoneNumber, mCode, mDisplayName;
     private Button mSend; 
     
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
         userIsLoggedIn();
 
+        mDisplayName = findViewById(R.id.displayName);
         mPhoneNumber = findViewById(R.id.phoneNumber);
         mCode = findViewById(R.id.code);
         mCode.setEnabled(false);
@@ -107,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
                                 if(!dataSnapshot.exists()){
                                     Map<String, Object> userMap = new HashMap<>();
                                     userMap.put("phone", user.getPhoneNumber());
-                                    userMap.put("name", user.getPhoneNumber());
+                                    userMap.put("name", mDisplayName.getText().toString());
                                     mUserDB.updateChildren(userMap);
                                 }
                                 userIsLoggedIn();

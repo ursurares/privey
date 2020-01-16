@@ -30,13 +30,22 @@
         android:inputType="number|phone"
         android:textColor="@color/colorAccentBland"
         android:textColorHint="@color/colorAccentBland" />
+    <EditText
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Display Name"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/phoneNumber"
+        android:textColor="@color/colorAccentBland"
+        android:textColorHint="@color/colorAccentBland" />
 
     <EditText
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_below="@+id/phoneNumber"
+        android:layout_below="@+id/displayName"
         android:digits="0123456789"
         android:hint="Enter Code"
         android:inputType="number"
