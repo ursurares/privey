@@ -146,7 +146,6 @@ public class FindUserActivity extends AppCompatActivity {
                         if(childSnapshot.child("name").getValue()!=null)
                             name = childSnapshot.child("name").getValue().toString();
 
-
                         UserObject mUser = new UserObject(childSnapshot.getKey(), name, phone);
                         if (name.equals(phone))
                             for(UserObject mContactIterator : contactList){
@@ -155,6 +154,13 @@ public class FindUserActivity extends AppCompatActivity {
                                 }
                             }
 
+                        boolean  exists = false;
+                        for (UserObject mUserIterator : userList){
+                            if (mUserIterator.getUid().equals(mUser.getUid()))
+                                exists = true;
+                        }
+                        if (exists)
+                            continue;
                         userList.add(mUser);
                         mUserListAdapter.notifyDataSetChanged();
                         return;
